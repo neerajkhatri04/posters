@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  background-color: #cdcdd6;
+
+  font-family: "Montserrat", helvetica, arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.main__card {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 350px;
+  margin: 100px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.main__card:hover {
+  transform: scale(1.02);
+  transition: all 0.4s;
+}
+.main__card .info_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 10px;
+}
+.main__card .info_section .header {
+  position: relative;
+  padding: 25px;
+  height: 40%;
+}
+.main__card .info_section .header h1 {
+  color: #000;
+  font-weight: 400;
+}
+
+
+.main__card .info_section .header h4 {
+  color: #333333;
+  font-weight: 400;
+}
+.main__card .info_section .header .minutes {
+  display: inline-block;
+  margin-top: 10px;
+  color: #333333;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.main__card .info_section .header .type {
+  display: inline-block;
+  color: #203956;
+  margin-left: 10px;
+}
+.main__card .info_section .header .head__poster {
+  position: relative;
+  float: left;
+  border-radius: 10px;
+  margin-right: 20px;
+  height: 120px;
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+.main__card .info_section .movie_desc {
+  padding: 25px;
+  height: 50%;
+}
+.main__card .info_section .movie_desc .text {
+  color: #333333;
+}
+.main__card .info_section .movie_social {
+  height: 10%;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+.main__card .info_section .movie_social ul {
+  list-style: none;
+  padding: 0;
+}
+.main__card .info_section .movie_social ul li {
+  display: inline-block;
+  color: rgba(73, 29, 29, 0.4);
+  transition: color 0.3s;
+  transition-delay: 0.15s;
+  margin: 0 10px;
+}
+.main__card .info_section .movie_social ul li:hover {
+  transition: color 0.3s;
+  color: rgba(255, 255, 255, 0.8);
+}
+.main__card .info_section .movie_social ul li i {
+  font-size: 19px;
+  cursor: pointer;
+}
+.main__card .blur_back {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  right: 0;
+  background-size: cover;
+  border-radius: 11px;
+}
+
+@media screen and (min-width: 768px) {
+
+   .info_section:hover .header h1 {
+    color: #d1cccc;
+    font-weight: 400;
+  }
+
+  .info_section:hover .header h4 {
+    color: #928c8c;
+    font-weight: 400;
+  }
+  
+  .info_section:hover .header .minutes {
+    display: inline-block;
+    margin-top: 10px;
+    color: #bca5a5;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+  }
+  .info_section:hover .header .type {
+    display: inline-block;
+    color: #345a85;
+    margin-left: 10px;
+  }
+
+  .info_section:hover .movie_social ul li {
+    display: inline-block;
+    color: rgba(162, 160, 160, 0.4);
+    transition: color 0.3s;
+    transition-delay: 0.15s;
+    margin: 0 10px;
+  }
+
+  .info_section:hover .movie_desc .text {
+    color: #c9c5c5;
+  }
+
+  .header {
+    width: 60%;
+  }
+  .movie_desc {
+    width: 50%;
+  }
+  .info_section {
+    background: linear-gradient(to right, #cdcdd6 50%, transparent 100%);
+  }
+
+  .info_section:hover {
+    background: linear-gradient(to right, #000000 50%, transparent 100%);
+  }
+
+  .blur_back {
+    width: 80%;
+    background-position: -100% 10% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+
+  html, body {
+    margin: 0;
+    background-color: rgb(107, 107, 110);
+  
+    font-family: "Montserrat", helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .main__card .info_section .header h1 {
+    color: #e8dcdc;
+    font-weight: 400;
+  }
+ 
+  
+  .main__card .info_section .header h4 {
+    color: #b7a4a4;
+    font-weight: 400;
+  }
+  .main__card .info_section .header .minutes {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f5d7d7;
+    
+  }
+  .main__card .info_section .header .type {
+    display: inline-block;
+    color: #8ca3bd;
+    margin-left: 10px;
+  }
+  .main__card .info_section .movie_desc .text {
+    color: #ccc1c1;
+  }
+
+  .main__card .info_section .movie_social ul li {
+    display: inline-block;
+    color: rgba(156, 155, 155, 0.621);
+    transition: color 0.3s;
+    transition-delay: 0.15s;
+    margin: 0 10px;
+  }
+
+  .main__card {
+    width: 95%;
+    margin: 70px auto;
+    min-height: 350px;
+    height: auto;
+  }
+  .blur_back {
+    width: 100%;
+    background-position: 50% 50% !important;
+  }
+  .header {
+    width: 100%;
+    margin-top: 85px;
+  }
+  .movie_desc {
+    width: 100%;
+  }
+  .info_section {
+    background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+    display: inline-grid;
+  }
+}
+
+#bright:hover {
+  box-shadow: 0px 0px 120px -55px rgb(0, 0, 0);
+}
+
+.bright_back {
+  background: url("../assets/one-piece-netflix-one-piece-anime.avif");
+}
+
+
+#tomb:hover {
+  box-shadow: 0px 0px 120px -55px rgb(3, 71, 59);
+}
+
+.tomb_back {
+  background: url("../assets/tony-poster.webp");
+}
+
+#ave {
+  
+  margin-bottom: 200px;
+}
+#ave:hover {
+  box-shadow: 0px 0px 120px -55px rgb(163, 7, 7);
+}
+
+.ave_back {
+  background: url("../assets/pubg-poster.jpg");
+}/*# sourceMappingURL=styles.css.map */
+
+
+
+/* video */
+
+.video1 , .video2, .video3 {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+  display: block;
+  border: none;
+  position: relative;
+  z-index: 100;
+}
+
+.video-popup1, .video-popup2 , .video-popup3{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  box-shadow: 10px 10px 10px 10px black;
+  z-index: 50;
+}
+
+.popup-bg1 , .popup-bg2, .popup-bg3 {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 40;
+}
+
+.popup-content1, .popup-content2, .popup-content3 {
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: auto;
+  z-index: 500;
+}/*# sourceMappingURL=ss.css.map */
+
+@media screen and (max-width: 350px) {
+  .popup-content1, .popup-content2, .popup-content3 {
+    background: black;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    z-index: 500;
+  }
+}
+
+footer {
+  color: #2a2a2b;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  margin: 2rem;
+}
+
